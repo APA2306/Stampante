@@ -1,0 +1,34 @@
+﻿<Window x:Class="Anelli.Alessandro._4I.stampante.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Anelli.Alessandro._4I.stampante"
+        mc:Ignorable="d"
+        Title="Stampante" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Pagina di stampa:"/>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Nero:"/>
+                <TextBox x:Name="txtNero" Width="50" Margin="5"/>
+                <Label Content="Ciano:"/>
+                <TextBox x:Name="txtCiano" Width="50" Margin="5"/>
+                <Label Content="Giallo:"/>
+                <TextBox x:Name="txtGiallo" Width="50" Margin="5"/>
+                <Label Content="Magenta:"/>
+                <TextBox x:Name="txtMagenta" Width="50" Margin="5"/>
+            </StackPanel>
+            <Button Content="Stampa" Click="OnStampaClick" Margin="5"/>
+
+            <Label Content="Contatore fogli:" Margin="5"/>
+            <TextBlock x:Name="txtContatoreFogli" Margin="5"/>
+            <Button Content="Aggiungi Fogli" Click="OnAggiungiFogliClick" Margin="5"/>
+
+            <Label Content="Stato Colori:" Margin="5"/>
+            <ListBox x:Name="lstStatoColori" Width="200" Height="100" Margin="5"/>
+
+            <Button Content="Ricarica Colori" Click="OnRicaricaColoriClick" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
